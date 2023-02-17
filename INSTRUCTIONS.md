@@ -16,10 +16,13 @@ npm install --save-dev stylelint stylelint-config-standard
 npm install --save-dev eslint-plugin-jasmine
 ```
 ## Testes E2E Cypress framework [leitura recomendada](https://testing-angular.com/end-to-end-testing/#strengths-of-end-to-end-tests)
+### Cucumber plugin [Referência](https://www.browserstack.com/guide/how-to-run-cypress-cucumber-test)
 ```
-ng e2e
+ng e2e 
+- Escolha o Cypress 
+
+npm install –save-dev cypress-cucumber-preprocessor
 ```
-Escolha o Cypress 
 
 ## Tradução i18n
 
