@@ -5,12 +5,8 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [RouterTestingModule],
+      declarations: [AppComponent],
     }).compileComponents();
   });
 
@@ -20,16 +16,18 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'my-page'`, () => {
+  it(`should have as title 'Yuri Araújo - Sr. Developer'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('my-page');
+    expect(app.title).toEqual('Yuri Araújo - Sr. Developer');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('my-page app is running!');
+    expect(compiled.querySelector('#mPT-title')?.textContent).toContain(
+      "Hi, i'm Yuri Araújo, a Fullcycle Developer living in state of Rio de Janeiro Brazil, welcome to my page!"
+    );
   });
 });
